@@ -1,0 +1,79 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<script src="js/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/forvalidate.js"></script>
+<script src="js/jquery.validate.js"></script>
+
+
+<!------ Include the above in your HEAD tag ---------->
+<style type="text/css">
+    body {
+    background-color: #eee;
+}
+
+*[role="form"] {
+    max-width: 530px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0.3em;
+}
+
+*[role="form"] h2 {
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+input[type="text"].error{
+    color: red;
+    border: 2px solid red!important;
+}
+label.error {
+    color: red;
+    font-size: 10.5px !important;
+}
+</style>
+
+          <div class="container">
+            <form class="form-horizontal" role="form" id="sipCal" method="post">
+                <h2>Registration Form</h2>
+                <div class="form-group">
+                    <label for="amount" class="col-sm-3 control-label" id="">Invest Amount</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="amount" name="amount" placeholder="Amount" class="form-control" autofocus>
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="duration" class="col-sm-3 control-label" >Period</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="duration" name="duration" placeholder="Duration" class="form-control" autofocus>
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label" >Interest</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="interest" name="interest" placeholder="Interest" class="form-control" autofocus>
+                     </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label" >Maturity Value</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="mvalue" name="mvalue" class="form-control" readonly>
+                    </div>
+                </div>
+
+                 <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label" >Amount Paid</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="amountpaid" name="amountpaid" class="form-control" readonly>
+                    </div>
+                </div>
+
+              <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button type="submit" class="btn btn-primary btn-block" id="btnSubmit">Register</button>
+                    </div>
+                </div>
+            </form> <!-- /form -->
+        </div> <!-- ./container --> 
